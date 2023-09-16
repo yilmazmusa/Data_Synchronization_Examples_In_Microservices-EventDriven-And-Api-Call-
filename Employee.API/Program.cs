@@ -50,6 +50,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
+//Person.API den gelen istek Employee.API de burda karþýlanýyor.
 app.MapGet("update/{personId}/{newName}", async (
     [FromRoute] string personId,
     [FromRoute] string newName,
@@ -63,7 +65,7 @@ app.MapGet("update/{personId}/{newName}", async (
 });
 
 
-//Employee.API.Models.Entities.Employee
+
 
 app.UseHttpsRedirection();
 
