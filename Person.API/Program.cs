@@ -52,6 +52,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
+//Person.API den Employee.API ye istek atýyoruz.Yani önce Person.API de deðiþiklik yapýyoruz o deðiþikliði Employee.API ye de haber veriyoruz Veri Senkronizasyonu olsun veri tutarsýzlýðý olmasýn diye.
+
 app.MapGet("/{id}/{newName}", async (
     [FromRoute] string id,
     [FromRoute] string newName,
